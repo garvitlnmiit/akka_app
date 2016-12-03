@@ -12,6 +12,7 @@ Create a new file build.sbt in your project directory. The following is the mini
 
 val akkaHttp = "com.typesafe.akka" %% "akka-http-spray-json-experimental" % "2.4.8"
 
+```scala
 lazy val commonSettings = Seq(
   organization := "com.example",
   version := "0.1.0",
@@ -24,3 +25,4 @@ lazy val root = (project in file(".")).
     name := "SimpleWebService",     // Name of the project directory
     libraryDependencies += akkaHttp // External lib dependency
   )
+```
